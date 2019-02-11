@@ -59,13 +59,6 @@ const MenuComponent = ({ totalPrice, count, items }) => (
               <CartComponent key={book.id} {...book} />
             ))}
 
-            {/* {count > 0 ? (
-              <Button color="green">Оформить заказ</Button>
-            ) : (
-              <Button disabled>Оформить заказ</Button>
-              )} */}
-
-            
             <Button disabled={count === 0 && true} color= "green" >Оформить заказ</Button>
             
           </Grid.Column>
